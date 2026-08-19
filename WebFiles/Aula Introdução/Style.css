@@ -1,0 +1,13 @@
+body h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-color: black;
+    text-align: left;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Dificuldade e Servidor</title>
+</head>
+<body>
+    <h1>Servidor</h1>
+    <br>
+    <form>
+        <p>
+            <label for="servidor">Escolha seu Servidor</label>
+            <select name="servidor" id="servidor">
+                <option value="America do Sul">America do Sul</option>
+                <option value="America do Norte">America do Norte</option>
+                <option value="Asia">Asia</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </p>
+        <br>
+        <h4>Escolha sua Dificuldade</h4>
+        <div>
+            <input type="radio" id="Normal" name="dificuldade" value="normal" checked>
+            <label for="Normal">Dificuldade Normal</label>
+        </div>
+        <div>
+            <input type="radio" id="Dificil" name="dificuldade" value="dificil">
+            <label for="Dificil">Dificuldade Dificil (Inimigos causam mais dano)</label>
+        </div>
+        <div>
+            <input type="radio" id="Brutal" name="dificuldade" value="brutal">
+            <label for="Brutal">Dificuldade Brutal (Defesa é reduzida pela metade)</label>
+        </div>
+        <br>
+        <fieldset> <!--Agrupar campos-->
+            <legend>Extras</legend>
+            <p>
+                <input type="checkbox" id="animacoes" name="animacoes"  >
+                <label for="animacoes">Exibir animações de Batalhas</label>
+            </p>
+            <p>
+                <input type="checkbox" id="idioma" name="idioma"  >
+                <label for="idioma">Inglês</label>
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
