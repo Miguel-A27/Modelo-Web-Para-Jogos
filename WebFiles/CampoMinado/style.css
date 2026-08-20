@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(123, 95, 160);
+    color: aqua;
+    /*1. Inicialiazr o contador de pontos*/
+    counter-reset: points;
+}
+
+.game-container{
+    position: relative;
+    text-align: center;
+    width: 320px;
+}
+
+h1{
+    font-size: 1.3rem;
+    margin: 15px;
+}
+
+.score-board{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/*Oculta os Inputs nativos*/
+
+input[type=checkbox]{
+    display: none;
+}
+
+.safe:checked{
+    counter-increment: points;
+}
+/*Total acumulado*/
+.score::after{
+    content: counter(points);
+}
+
+/*Tabuleiro 3x3*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.tile{
+    background: #24B1B1;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: background 0.2s;
+}
+
+.tile:hover{
+    background: #007979;
+}
+
+#c1:checked ~ .grid label[for=c1],
+#c1:checked ~ .grid label[for=c2],
+#c1:checked ~ .grid label[for=c3],
+#c1:checked ~ .grid label[for=c4],
+#c1:checked ~ .grid label[for=c5],
+#c1:checked ~ .grid label[for=c6],
+#c1:checked ~ .grid label[for=c7]{
+    background: #2e2e2e;
+    pointer-events: none;
+}
+
+#c1:checked ~ .grid label[for=c1]::after,
+#c2:checked ~ .grid label[for=c2]::after,
+#c3:checked ~ .grid label[for=c3]::after,
+#c4:checked ~ .grid label[for=c4]::after,
+#c5:checked ~ .grid label[for=c5]::after,
+#c6:checked ~ .grid label[for=c6]::after,
+#c7:checked ~ .grid label[for=c7]::after{
+    content:"🦖";
+}
+
+.screen{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.btn-restart{
+    padding: 10px 18px;
+    background: #e71d36;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
