@@ -1,0 +1,24 @@
+/* Reset e tipografia Flat*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Fundo Sólido com contraste com o card*/
+body{
+    background-color: #450C3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-card{
+    background-color: #F5FBDA;
+    padding: 30px; /*Preenchimento do enquadramento*/
+    border-radius: 4px; /*Arredondamento das bordas*/
+    width: 340px;
+    margin-top: 20px;
+}

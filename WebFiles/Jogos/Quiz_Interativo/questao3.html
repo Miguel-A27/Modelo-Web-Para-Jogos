@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz em CSS puro</title>
+</head>
+<body>
+    <h1>Quiz Interativo (CSS)</h1>
+    <div class="quiz-card">
+        
+        <h2>Questão 3: Qual a palavra chave HTML para atribuir um link no corpo de texto?</h2>
+        
+            <!--Alternativa 1 (errada)-->
+        <input type="radio" name="q2" id="wrong1">
+        <label for="wrong1">section</label>
+            <!--Alternativa 2 (errada)-->
+        <input type="radio" name="q2" id="wrong2">
+        <label for="correct">li</label>
+            <!--Alternativa 3 (correta)-->
+        <input type="radio" name="q2" id="correct">
+        <label for="wrong2">a</label>
+        <br>
+        <!--Feedbacks-->
+        <div class="feedback feedback-correct">Parabens! Você acertou.</div>
+        <div class="feedback feedback-wrong">Tente novamente.</div>
+        
+        <!--Link para a página da Questão 2-->
+        <a href="questao4.html" class="btn_nav">Próxima Questão &rarr;.</a>
+    </div>
+</body>
+</html>

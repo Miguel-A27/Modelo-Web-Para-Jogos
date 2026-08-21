@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz em CSS puro</title>
+</head>
+<body>
+    <h1>Quiz Interativo (CSS)</h1>
+    <div class="quiz-card">
+        
+        <h2>Questão 2: Qual a propriedade CSS que altera a cor do texto?</h2>
+        
+            <!--Alternativa 1 (correta)-->
+        <input type="radio" name="q2" id="correct">
+        <label for="wrong1">color</label>
+            <!--Alternativa 2 (errada)-->
+        <input type="radio" name="q2" id="wrong1">
+        <label for="correct">background-color</label>
+            <!--Alternativa 3 (errada)-->
+        <input type="radio" name="q2" id="wrong2">
+        <label for="wrong2">font-style</label>
+        <br>
+        <!--Feedbacks-->
+        <div class="feedback feedback-correct">Parabens! Você acertou.</div>
+        <div class="feedback feedback-wrong">Tente novamente.</div>
+        
+        <!--Link para a página da Questão 2-->
+        <a href="questao3.html" class="btn_nav">Próxima Questão &rarr;.</a>
+    </div>
+</body>
+</html>
