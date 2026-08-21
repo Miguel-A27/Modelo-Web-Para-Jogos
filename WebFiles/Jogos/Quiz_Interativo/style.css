@@ -22,3 +22,99 @@ body{
     width: 340px;
     margin-top: 20px;
 }
+
+h2{
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: #B9D175;
+    margin-top: 20px;
+}
+
+input[type="radio"]{
+    display: none; 
+}
+
+/*labels com cores chapadas e sem animação*/
+label{
+    display: block;
+    background: #D9EFBD;
+    color: #450C3F;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+/*Interação de hover, mudança de tom dos botões.*/
+label:hover{
+    background: #B9D175;
+}
+
+#correct:checked + label{
+    background-color: #c9e046;
+    color: #450C3F;
+}
+
+#wrong1:checked + label, 
+#wrong2:checked + label{
+    background-color: brown;
+    color: #B9D175;
+}
+
+.feedback{
+    display: none;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#correct:checked ~ .feedback-correct{
+    display: block;
+    color: #B9D175;
+}
+
+#correct:checked ~ .feedback-wrong,
+#correct:checked ~ .feedback-wrong{
+    display: block;
+    color: #B9D175;
+}
+
+.btn-nav{
+    display: none;
+    margin-top: 20px;
+    padding: 14px;
+    background-color:aqua;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.5s ease;
+}
+
+.btn-nav:hover{
+    background-color: cadetblue;
+}
+
+#correct:checked ~ .btn-nav{
+    display: block;
+}
+
+.btn-nav-r{
+    margin-top: 20px;
+    padding: 14px;
+    background-color:aqua;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.5s ease;
+}
+
+.btn-nav-r:hover{
+    background-color: cadetblue;
+}
